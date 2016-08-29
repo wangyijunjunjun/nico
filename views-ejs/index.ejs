@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+    <title></title>
+
+    <link rel="stylesheet" id="style_style" href="http://www.nicodo.in/static/theme/default/www/style/style.css?t=c8pe"
+          type="text/css"/>
+    <style id="cyebody">
+        html.cye-enabled.cye-lm body {
+            background-color: #cfebd2 !important;
+            border-color: rgb(51, 58, 52) !important;
+            background-image: none !important;
+            color: #000000 !important
+        }
+    </style>
+
+    <style id="cyediv">
+        html.cye-enabled.cye-lm div {
+            background-color: #cfebd2 !important;
+            border-color: rgb(51, 58, 52) !important;
+            background-image: none !important;
+            color: #000000 !important
+        }
+    </style>
+    <style id="cyetable">
+        html.cye-enabled.cye-lm th {
+            background-color: #cfebd2 !important;
+            border-color: rgb(51, 58, 52) !important;
+            background-image: none !important;
+            color: #000000 !important
+        }
+
+        html.cye-enabled.cye-lm td {
+            background-color: #cfebd2 !important;
+            border-color: rgb(51, 58, 52) !important;
+            background-image: none !important;
+            color: #000000 !important
+        }
+    </style>
+</head>
+<body id="home">
+<div id="header" class="header ow">
+    <div class="header_top cl">
+        <h2 id="logo" class="logo">
+            <a href="/" title="ニコ動">
+                <img src="http://www.nicodo.in/static/theme/default/www/image/logo.png?t=c8pe" alt="ニコニコ動画検索補助サイト"/>
+            </a>
+        </h2>
+        <div class="right">
+            <a href="http://www.nicodo.in?logout=true">Logout</a></div>
+    </div>
+    <div class="header_bottom cl">
+        <ul id="nav_header" class="nav_header menu_header">
+            <li class="depth_0 type_home  not_current"><a href="/" title="Home">Home</a></li>
+            <li class="depth_0 type_custom  not_current"><a href="/" title="エンタメ・音楽">エンタメ・音楽</a></li>
+            <li class="depth_0 type_custom  not_current"><a href="/" title="生活・一般・スポ">生活・一般・スポ</a></li>
+            <li class="depth_0 type_custom  not_current"><a href="/" title="政治">政治</a></li>
+            <li class="depth_0 type_custom  not_current"><a href="/" title="科学・技術">科学・技術</a></li>
+            <li class="depth_0 type_custom  not_current"><a href="/" title="アニメ・ゲーム・絵">アニメ・ゲーム・絵</a></li>
+            <li class="depth_0 type_custom  not_current"><a href="/" title="その他">その他</a></li>
+            <li class="depth_0 type_custom  not_current"><a href="/" title="R-18">R-18</a></li>
+        </ul>
+    </div>
+</div>
+<div id="main" class="main ow">
+
+    <div class="nico nico_list">
+        <div class="nico_search">
+            <form role="search" method="get" id="search_form" autocomplete="off" action="/query">
+                <table class="form_table ">
+                    <tbody>
+                    <tr class="even nico_title">
+                        <td class="title">标题</td>
+                        <td class="value">
+                            <% if (queryBody.title) { %>
+                            <input name="title" class="form_nico_title text" id="form_nico_title" type="text"
+                                   value= <%= queryBody.title %>/>
+                            <% }else { %>
+                            <input name="title" class="form_nico_title text" id="form_nico_title" type="text" value=""/>
+                            <% } %>
+                        </td>
+                    </tr>
+                    <tr class="even nico_title">
+                        <td class="title">分类</td>
+                        <td class="value">
+                            <% if (queryBody.category) { %>
+                            <input name="category" class="form_nico_title text" id="form_nico_title" type="text"
+                                   value= <%= queryBody.category %>/>
+                            <% }else { %>
+                            <input name="category" class="form_nico_title text" id="form_nico_title" type="text"
+                                   value=""/>
+                            <% } %>
+                        </td>
+                    </tr>
+                    <tr class="odd tag_name">
+                        <td class="title">标签</td>
+                        <td class="value">
+                            <!--这里面的 value 要用逗号将数组中的值链接起来-->
+                            <% if (queryBody.tags) { %>
+                            <input name="tags" class="form_tag_name text" id="form_tag_name"
+                                   value=<%= queryBody.tags %>
+                                   type="text"/>
+
+                            <% }else { %>
+                            <input name="tags" class="form_tag_name text" id="form_tag_name" value=""
+                                   type="text"/>
+                            <% } %>
+                            <span
+                                    class="span_form_tag_name form_span">多个标签用<code>,</code>分割
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="even user_id">
+                        <td class="title">用户名称</td>
+                        <td class="value">
+                            <% if (queryBody.author_nickname) { %>
+                            <input name="author_nickname" class="form_user_id text" id="form_user_id"
+                                   value=<%= queryBody.author_nickname %>
+                                   type="text"/>
+                            <% }else { %>
+                            <input name="author_nickname" class="form_user_id text" id="form_user_id" value=""
+                                   type="text"/>
+                            <% } %>
+                        </td>
+                    </tr>
+
+                    <tr class="odd nico_filetime">
+                        <td class="title">视频长度</td>
+                        <td class="value">
+
+                            <% if (queryBody.nico_filetime_gt) { %>
+                            <input name="nico_filetime_gt" class="form_nico_filetime text" id="form_nico_filetime-0-"
+                                   value=<%= queryBody.nico_filetime_gt %>
+                                   type="text"/>
+
+                            <% }else { %>
+                            <input name="nico_filetime_gt" class="form_nico_filetime text"
+                                   id="form_nico_filetime-0-" value="" type="text"/>
+                            <% } %>
+                            <span
+                                    class="span_form_nico_filetime-0- form_span">-</span>
+                            <% if (queryBody.nico_filetime_gt) { %>
+                            <input name="nico_filetime_lt" class="form_nico_filetime text" id="form_nico_filetime-1-"
+                                   value=<%= queryBody.nico_filetime_lt %>
+                                   type="text"/>
+                            <% }else { %>
+                            <input name="nico_filetime_lt" class="form_nico_filetime text" id="form_nico_filetime-1-"
+                                   value="" type="text"/>
+                            <% } %>
+                            <span
+                                    class="span_form_nico_filetime-1- form_span">Seconds</span></td>
+                    </tr>
+
+                    <tr class="even nico_filesize">
+                        <td class="title">视频大小</td>
+                        <td class="value">
+
+                            <% if (queryBody.nico_filesize_gt) { %>
+                            <input name="nico_filesize_gt" class="form_nico_filesize text"
+                                   id="form_nico_filesize-0-" value=<%= queryBody.nico_filesize_gt %> type="text"/>
+
+                            <% }else { %>
+                            <input name="nico_filesize_gt" class="form_nico_filesize text"
+                                   id="form_nico_filesize-0-" value="" type="text"/>
+                            <% } %>
+
+                            <span
+                                    class="span_form_nico_filesize-0- form_span">-</span>
+
+                            <% if (queryBody.nico_filesize_lt) { %>
+                            <input name="nico_filesize_lt"
+                                   class="form_nico_filesize text"
+                                   id="form_nico_filesize-1-"
+                                   value=<%= queryBody.nico_filesize_lt %>
+                                   type="text"/>
+                            <% }else { %>
+                            <input name="nico_filesize_lt"
+                                   class="form_nico_filesize text"
+                                   id="form_nico_filesize-1-"
+                                   value=""
+                                   type="text"/>
+                            <% } %>
+
+                            <span
+                                    class="span_form_nico_filesize-1- form_span">MB</span></td>
+                    </tr>
+
+                    <tr class="even nico_filesize">
+                        <td class="title">视频分辨率</td>
+                        <td class="value">
+                            <% if (queryBody.nico_pixels_gt) { %>
+
+                            <input name="nico_pixels_gt" class="form_nico_filesize text"
+                                   id="form_nico_filesize-0-" value=<%= queryBody.nico_pixels_gt %> type="text"/>
+
+                            <% }else { %>
+                            <input name="nico_pixels_gt" class="form_nico_filesize text"
+                                   id="form_nico_filesize-0-" value="" type="text"/>
+                            <% } %>
+
+                            <span
+                                    class="span_form_nico_filesize-0- form_span">-</span>
+
+                            <% if (queryBody.nico_pixels_lt) { %>
+
+                            <input name="nico_pixels_lt"
+                                   class="form_nico_filesize text"
+                                   id="form_nico_filesize-1-"
+                                   value=<%= queryBody.nico_pixels_lt %>
+                                   type="text"/>
+                            <% }else { %>
+                            <input name="nico_pixels_lt"
+                                   class="form_nico_filesize text"
+                                   id="form_nico_filesize-1-"
+                                   value=""
+                                   type="text"/>
+                            <% } %>
+                            <span
+                                    class="span_form_nico_filesize-1- form_span">PX</span>
+                        </td>
+                    </tr>
+
+                    <tr class="odd nico_posttime">
+                        <td class="title">发布时间</td>
+                        <td class="value">
+                            <input name="nico_posttime_gt" class="form_nico_posttime date"
+                                   id="form_nico_posttime-0-" value="2015-08-27" type="date"/>
+                            <span
+                                    class="span_form_nico_posttime-0- form_span">-</span>
+                            <input name="nico_posttime_lt"
+                                   class="form_nico_posttime date"
+                                   id="form_nico_posttime-1-"
+                                   value="2016-08-28"
+                                   type="date"/>
+                        </td>
+                    </tr>
+
+                    <tr class="odd search">
+                        <td class="title"></td>
+                        <td class="value">
+                            <input name="submit" class="confirm submit" id="form_submit" value="Search"
+                                   type="submit"/>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+        <div class="nico_sort">
+            <ul id="nav_header" class="nav_header menu_header">
+                <li class="depth_0 type_home  not_current" style="width:14.2%"><a
+                            href=<%= url + "&sort=created_at" %> title="发布时间">发布时间</a></li>
+                <li class="depth_0 type_custom  not_current" style="width:14.2%"><a
+                            href=<%= url + "&sort=pixels" %> title="分辨率">分辨率</a>
+                </li>
+                <li class="depth_0 type_custom  not_current" style="width:14.2%"><a
+                            href=<%= url + "&sort=get_at" %> title="取得时间">取得时间</a>
+                </li>
+                <li class="depth_0 type_custom  not_current" style="width:14.2%"><a
+                            href=<%= url + "&sort=view_count" %> title="政治">浏览数</a></li>
+                <li class="depth_0 type_custom  not_current" style="width:14.2%"><a
+                            href=<%= url + "&sort=comment_count" %> title="科学・技術">评论数</a></li>
+                <li class="depth_0 type_custom  not_current" style="width:14.2%"><a
+                            href<%= url + "&sort=length" %> title="政治">视频长度</a></li>
+            </ul>
+        </div>
+        <ul class="list">
+            <% for(var i in data.hits){ %>
+            <li class="cl">
+                <div class="left">
+                    <a href=<%= "/watch/sm" + data.hits[i]._id %>
+                       title="DAYS #09" class="nico_a" >
+                    <img src=<%= "http://tn-skr3.smilevideo.jp/smile?i=" + data.hits[i]._id %> alt="DAYS #09"
+                    class="nico_img" />
+                    </a>
+                </div>
+                <div class="right">
+                    <h3 class="title"><a href=<%= "/watch/sm" + data.hits[i]._id %> title="DAYS #09" class="nico_url"
+                        rel="bookmark">
+                        <%= data.hits[i]._source.title %>
+                        </a></h3>
+                    <div class="excerpt"><%- data.hits[i]._source.content %></div>
+                    <div class="meta">
+                        <span><strong>ID：</strong><a
+                                    href=<%= "/watch/sm" + data.hits[i]._id %>><%= "sm" + data.hits[i]._id %></a></span>
+                        <span><strong>用户：</strong>
+                <a href=<%= "/query?title=&category=&tags=&author_nickname=" + data.hits[0]._source.author.nickname + "&nico_filetime_gt=&nico_filetime_lt=&nico_filesize_gt=&nico_filesize_lt=&nico_pixels_gt=&nico_pixels_lt=&nico_posttime_gt=2015-08-27&nico_posttime_lt=2016-08-28&submit=Search" %>>
+              <%= data.hits[i]._source.author.nickname %></a></span>
+                        <span><strong>获得时间：</strong><span title="2016-08-28 03:48:28">59 分钟前</span></span>
+                        <span><strong>文件时间：</strong>
+                </span>
+                        <span><strong>文件大小：</strong><%= data.hits[i]._source.size %>  </span>
+                        <span><strong>文件类型：</strong><%= data.hits[i]._source.urls[0].type %></span>
+                    </div>
+                </div>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+</div>
+<script>
+
+
+</script>
+</body>
+</html>

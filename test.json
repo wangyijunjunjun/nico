@@ -1,0 +1,349 @@
+{
+   "took": 3,
+   "timed_out": false,
+   "_shards": {
+      "total": 5,
+      "successful": 5,
+      "failed": 0
+   },
+   "hits": {
+      "total": 5,
+      "max_score": 1,
+      "hits": [
+         {
+            "_index": "nico",
+            "_type": "data",
+            "_id": "29452962",
+            "_score": 1,
+            "_source": {
+               "height": 480,
+               "thread_id": [
+                  1471265449,
+                  1471265446
+               ],
+               "is_official": false,
+               "main_genre": "game",
+               "category": "Games",
+               "view_count": 36,
+               "errors": {
+                  "once": true
+               },
+               "author": {
+                  "nickname": "Fさん♂（実況）",
+                  "stamp_exp": 85,
+                  "id": 15374748
+               },
+               "is_r18": false,
+               "content": "新実況だああああああ！！！<s>（予定より１０日以上遅れた）</s><br />先にこれ終わらします。（夏休みが終わっちゃう…）<br />このゲームは友人に勧められたのでやったぜい！<br /><br />ＯＰ…↑THE HIGH-LOWS↓（ザ・ハイロウズ）/夏なんだな<br /><br />どもども。<u><font size=\"4\" color=\"#ff0000\"><b>F</b></font>と申すものです。</u><br /><br /><font color=\"#3300cc\">Twitter</font>　  [https://goo.gl/UJmCO4]　<br /><font color=\"#cc0099\">Youtube</font>　[https://goo.gl/Ytr7vk]<br /><br /><font size=\"3\" color=\"#ff0000\"><b>ニコニコミュニティ</b></font>「<a href=\"http://com.nicovideo.jp/community/co3187882\" target=\"_blank\">co3187882</a>」<br />現在ドラクエ４を実況生放送しております。<br />次の予定はクロノトリガーと思ってます。<br /><br />part１→これ　次→まだ<br /><br />ぼくなつマイリス→<a href=\"http://www.nicovideo.jp/mylist/56697253\" target=\"_blank\">mylist/56697253</a>",
+               "width": 854,
+               "comment_count": 0,
+               "length": 1156,
+               "get_at": "2016-08-15T12:52:31.691000",
+               "type": "sm",
+               "my_list_count": 1,
+               "tags": [
+                  {
+                     "dic": true,
+                     "id": null,
+                     "name": "Games"
+                  }
+               ],
+               "is_public": true,
+               "pixels": 409920,
+               "is_deleted": false,
+               "language": "ja-jp",
+               "country": "jp",
+               "created_at": "2016-08-15T12:50:45",
+               "area": "jp",
+               "is_monetized": false,
+               "__v": 30,
+               "urls": [
+                  {
+                     "type": "mp4",
+                     "vip": false,
+                     "cookie": "sm29452962:1471308561:1471308561:60fcce12e4a35d4b:1",
+                     "get_at": "2016-08-16T00:51:01.544000",
+                     "value": "http://smile-fnl11.nicovideo.jp/smile?m=29452962.86217"
+                  },
+                  {
+                     "cookie": "sm29452962:1471265485:1471265485:c29d980f5e191f1f:1",
+                     "get_at": "2016-08-15T12:53:04.829000",
+                     "type": "mp4",
+                     "vip": true,
+                     "value": "http://smile-pow14.nicovideo.jp/smile?m=29452962.86217"
+                  }
+               ],
+               "title": "[ぼくなつ2]☆エンジョイ♪ing「ぼくらのなつやすみ２」2016inサマー＃１"
+            }
+         },
+         {
+            "_index": "nico",
+            "_type": "data",
+            "_id": "29452961",
+            "_score": 1,
+            "_source": {
+               "height": 360,
+               "thread_id": [
+                  1471266006,
+                  1471264325
+               ],
+               "is_official": false,
+               "main_genre": "music",
+               "category": "Music",
+               "view_count": 283,
+               "errors": {
+                  "once": true
+               },
+               "author": {
+                  "nickname": "wani",
+                  "stamp_exp": 61,
+                  "id": 12495946
+               },
+               "is_r18": false,
+               "content": "アニメ「マクロスΔ」よりワルキューレが歌う初期OP曲「一度だけの恋なら」です。<br />この曲は多様なシンセやアルペジオ、左右に振りまくったパンなどなど、FM音源アレンジすると楽しい要素満載な楽曲です。<br />さらに今回はPCMレスということで、全てFM音源+SSG音源のみで構成してみました。<br />聴きやすくまとめてみましたので、是非最後まで聴いて下されば嬉しいです。<br /><br />Windows上で動作する音楽ドライバ「FMP7」を使用しています。<br />FM22音+SSG20音で構成されています。<br /><br />前作:吹雪→<a href=\"http://www.nicovideo.jp/watch/sm28914525\" class=\"watch\">sm28914525</a><br />その他の曲とか→<a href=\"http://www.nicovideo.jp/mylist/16595469\" target=\"_blank\">mylist/16595469</a><br /><br />ブログ：http://blog.goo.ne.jp/wanispro<br />ツイッタ－：http://twitter.com/wanisFMP",
+               "width": 640,
+               "comment_count": 0,
+               "length": 246,
+               "get_at": "2016-08-15T13:03:27.192000",
+               "type": "sm",
+               "my_list_count": 5,
+               "tags": [
+                  {
+                     "dic": true,
+                     "id": null,
+                     "name": "Music"
+                  }
+               ],
+               "is_public": true,
+               "pixels": 230400,
+               "is_deleted": false,
+               "language": "ja-jp",
+               "country": "jp",
+               "created_at": "2016-08-15T13:00:00",
+               "area": "jp",
+               "is_monetized": false,
+               "__v": 18,
+               "urls": [
+                  {
+                     "type": "mp4",
+                     "vip": false,
+                     "cookie": "sm29452961:1471309118:1471309118:2e3b2d4b10773464:1",
+                     "get_at": "2016-08-16T01:00:18.837000",
+                     "value": "http://smile-fnl60.nicovideo.jp/smile?m=29452961.12914"
+                  },
+                  {
+                     "cookie": "sm29452961:1471266119:1471266119:5100c8d0a4ea3704:1",
+                     "get_at": "2016-08-15T13:03:39.065000",
+                     "type": "mp4",
+                     "vip": true,
+                     "value": "http://smile-pow63.nicovideo.jp/smile?m=29452961.12914"
+                  }
+               ],
+               "title": "【マクロスΔ】FM音源版「一度だけの恋なら」"
+            }
+         },
+         {
+            "_index": "nico",
+            "_type": "data",
+            "_id": "29452959",
+            "_score": 1,
+            "_source": {
+               "height": 720,
+               "thread_id": [
+                  1471264331
+               ],
+               "is_official": false,
+               "main_genre": null,
+               "category": null,
+               "view_count": 129,
+               "errors": {
+                  "once": true
+               },
+               "author": {
+                  "nickname": "ゆきもふ",
+                  "stamp_exp": 64,
+                  "id": 25447891
+               },
+               "is_r18": false,
+               "content": "しょたぽんに続き、しょたりすモデル製作中。<br />12歳くらいです。<br /><br />完成度は50％くらい…完成したら配布したいです。",
+               "width": 1280,
+               "comment_count": 0,
+               "length": 196,
+               "get_at": "2016-08-15T12:38:14.523000",
+               "type": "sm",
+               "my_list_count": 8,
+               "tags": [],
+               "is_public": true,
+               "pixels": 921600,
+               "is_deleted": false,
+               "language": "ja-jp",
+               "country": "jp",
+               "created_at": "2016-08-15T12:32:11",
+               "area": "jp",
+               "is_monetized": false,
+               "__v": 10,
+               "urls": [
+                  {
+                     "type": "mp4",
+                     "vip": false,
+                     "cookie": "sm29452959:1471307431:1471307431:766ced93890916a2:1",
+                     "get_at": "2016-08-16T00:32:11.450000",
+                     "value": "http://smile-fnl40.nicovideo.jp/smile?m=29452959.69481"
+                  },
+                  {
+                     "cookie": "sm29452959:1471264631:1471264631:2269dbde0328d416:1",
+                     "get_at": "2016-08-15T12:38:50.771000",
+                     "type": "mp4",
+                     "vip": true,
+                     "value": "http://smile-pow43.nicovideo.jp/smile?m=29452959.69481"
+                  }
+               ],
+               "title": "自作しょた英テスト"
+            }
+         },
+         {
+            "_index": "nico",
+            "_type": "data",
+            "_id": "29452963",
+            "_score": 1,
+            "_source": {
+               "height": 656,
+               "thread_id": [
+                  1471264437
+               ],
+               "is_official": false,
+               "main_genre": "science",
+               "category": "Science",
+               "view_count": 104,
+               "author": {
+                  "nickname": "Beatle",
+                  "stamp_exp": 63,
+                  "id": 253789
+               },
+               "storage": {
+                  "google": {
+                     "path": "/nicovideo/2016/08/15/21/sm29452963.mp4",
+                     "success": true,
+                     "progress": 100
+                  },
+                  "local": {
+                     "path": "/2016/08/15/21/sm29452963.mp4",
+                     "progress": 100,
+                     "success": true,
+                     "size": 99344371
+                  }
+               },
+               "is_r18": false,
+               "content": "A Tour of Go を実況しながらプレイします",
+               "width": 992,
+               "comment_count": 0,
+               "length": 2167,
+               "get_at": "2016-08-15T12:35:39.866000",
+               "type": "sm",
+               "my_list_count": 3,
+               "tags": [
+                  {
+                     "name": "Science",
+                     "id": null
+                  }
+               ],
+               "is_public": true,
+               "pixels": 650752,
+               "is_deleted": false,
+               "language": "ja-jp",
+               "country": "jp",
+               "created_at": "2016-08-15T12:33:57",
+               "area": "jp",
+               "is_monetized": false,
+               "__v": 15,
+               "urls": [
+                  {
+                     "type": "mp4",
+                     "vip": false,
+                     "cookie": "sm29452963:1471307537:1471307537:e014ca66382cdb33:1",
+                     "get_at": "2016-08-16T00:33:57.338000",
+                     "value": "http://smile-fnl21.nicovideo.jp/smile?m=29452963.72146"
+                  },
+                  {
+                     "type": "mp4",
+                     "vip": true,
+                     "cookie": "sm29452963:1471264441:1471264441:d677bc9b809db3e0:1",
+                     "get_at": "2016-08-15T12:35:40.054000",
+                     "value": "http://smile-pow24.nicovideo.jp/smile?m=29452963.72146"
+                  }
+               ],
+               "title": "Go言語プレイ実況"
+            }
+         },
+         {
+            "_index": "nico",
+            "_type": "data",
+            "_id": "29452957",
+            "_score": 1,
+            "_source": {
+               "height": 720,
+               "thread_id": [
+                  1471264650
+               ],
+               "is_official": false,
+               "main_genre": "game",
+               "category": "Games",
+               "view_count": 3606,
+               "author": {
+                  "nickname": "頭に矢の人",
+                  "stamp_exp": 191,
+                  "id": 257779
+               },
+               "is_r18": false,
+               "content": "好評発売中！PC版は39.99$大体4100円くらいだよ！安いよ！<br /><br />前⇒<a href=\"http://www.nicovideo.jp/watch/sm29438908\" class=\"watch\">sm29438908</a><br />次⇒<br /><br />YOUTUBE⇒https://goo.gl/yDsFKX<br />twitter⇒http://twitter.com/Mr_HeadArrow<br />生放送⇒https://www.twitch.tv/mrheadarrow<br /><br />",
+               "width": 1280,
+               "comment_count": 0,
+               "length": 432,
+               "get_at": "2016-08-15T12:44:10.334000",
+               "type": "sm",
+               "my_list_count": 23,
+               "tags": [
+                  {
+                     "dic": true,
+                     "id": null,
+                     "name": "Games"
+                  }
+               ],
+               "is_public": true,
+               "pixels": 921600,
+               "is_deleted": false,
+               "language": "ja-jp",
+               "country": "jp",
+               "created_at": "2016-08-15T12:42:18",
+               "area": "jp",
+               "is_monetized": false,
+               "__v": 10,
+               "urls": [
+                  {
+                     "type": "mp4",
+                     "vip": false,
+                     "cookie": "sm29452957:1471307750:1471307750:ddc67884027e7650:1",
+                     "get_at": "2016-08-16T00:37:31.890000",
+                     "value": "http://smile-fnl20.nicovideo.jp/smile?m=29452957.37581"
+                  },
+                  {
+                     "cookie": "sm29452957:1471274199:1471274199:2bd46a93bee270f7:1",
+                     "get_at": "2016-08-15T15:18:18.357000",
+                     "type": "mp4",
+                     "vip": false,
+                     "value": "http://smile-fnl20.nicovideo.jp/smile?m=29452957.37581low"
+                  },
+                  {
+                     "type": "mp4",
+                     "vip": true,
+                     "cookie": "sm29452957:1471265151:1471265151:1dca35e79b974be8:1",
+                     "get_at": "2016-08-15T12:47:30.756000",
+                     "value": "http://smile-pow23.nicovideo.jp/smile?m=29452957.37581"
+                  }
+               ],
+               "title": "【ゆっくり】スポーツ？そんな事より爆弾だ！ PC版【OverWatch】"
+            }
+         }
+      ]
+   }
+}

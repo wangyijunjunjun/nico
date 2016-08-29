@@ -1,0 +1,33 @@
+{
+  "name": "cookies",
+  "version": "0.6.1",
+  "description": "Cookies, optionally signed using Keygrip.",
+  "main": "./lib/cookies",
+  "dependencies": {
+    "depd": "~1.1.0",
+    "keygrip": "~1.0.0"
+  },
+  "devDependencies": {
+    "express": "4.7.4",
+    "mocha": "1.21.5",
+    "restify": "2.8.1",
+    "supertest": "1.1.0"
+  },
+  "license": "MIT",
+  "author": "Jed Schmidt <tr@nslator.jp> (http://jed.is)",
+  "repository": "pillarjs/cookies",
+  "files": [
+    "lib/",
+    "History.md",
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">= 0.8"
+  },
+  "scripts": {
+    "test": "mocha --require test/support/env --reporter spec"
+  },
+  "_from": "cookies@0.6.1",
+  "_resolved": "http://registry.npm.taobao.org/cookies/download/cookies-0.6.1.tgz"
+}
